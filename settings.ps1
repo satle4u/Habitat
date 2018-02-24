@@ -1,13 +1,13 @@
 # Solution parameters
-$SolutionPrefix = "habitat"
-$SitePostFix = "dev.local"
-$webroot = "C:\inetpub\wwwroot"
+$SolutionPrefix = "sitecore90"
+$SitePostFix = "sitecore90.local"
+$webroot = "C:\\inetpub\\wwwroot"
 
-$SitecoreVersion = "9.0.0 rev. 171002"
-$InstallerVersion = "1.0.2"
+$SitecoreVersion = "9.0.1 rev. 171219"
+$InstallerVersion = "1.1.0"
 
 # Assets and prerequisites
-$AssetsRoot = "$PSScriptRoot\build\assets"
+$AssetsRoot = "D:\\Sitecore\\Installer"
 $AssetsPSRepository = "https://sitecore.myget.org/F/sc-powershell/api/v2/"
 $AssetsPSRepositoryName = "SitecoreGallery"
 
@@ -17,9 +17,9 @@ $LicenseFile = "$AssetsRoot\license.xml"
 $CertPath = Join-Path "$AssetsRoot" "Certificates"
 
 # SQL Parameters
-$SqlServer = "."
+$SqlServer = "localhost"
 $SqlAdminUser = "sa"
-$SqlAdminPassword = "12345"
+$SqlAdminPassword = "password1"
 
 # XConnect Parameters
 $XConnectConfiguration = "$AssetsRoot\xconnect-xp0.json"
@@ -41,6 +41,6 @@ $SitecoreSiteName = "$SolutionPrefix.$SitePostFix"
 $SitecoreSiteRoot = Join-Path $webroot -ChildPath $SitecoreSiteName
 
 # Solr Parameters
-$SolrUrl = "https://localhost:8983/solr"
-$SolrRoot = "c:\\solr"
-$SolrService = "Solr"
+$SolrUrl = "https://localhost:8991/solr"
+$SolrRoot = "D:\\Solr-6.6.2"
+$SolrService = "Solr662Service"
